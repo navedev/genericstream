@@ -1,0 +1,2 @@
+# genericstream
+Spring Cloud Stream 
