@@ -23,4 +23,11 @@ public class MessagingListener {
 
 	}
 
+	@StreamListener(value = MessageStream.INPUT_CHANNEL)
+	public void handleMoreMessage(@Payload Note note) {
+
+		log.info("Inside handleMoreMessage() -- {}", note);
+
+	}
+
 }
